@@ -25,16 +25,16 @@ class TransactionList extends StatelessWidget {
         ? LayoutBuilder(builder: (ctx, constraints) {
             return Column(children: [
               Container(
-                height: constraints.maxHeight * 0.1,
-                child: Text(
-                  'No transactions added yet!',
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
+                height: constraints.maxHeight * 0.2,
+                child: Center(
+                  child: Text(
+                    'No transactions added yet!',
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20,
+                    ),
                   ),
                 ),
-              ),
-              SizedBox(
-                height: constraints.maxHeight * 0.1,
               ),
               Container(
                   height: constraints.maxHeight * 0.6,
