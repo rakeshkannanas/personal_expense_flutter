@@ -9,14 +9,6 @@ class TransactionList extends StatelessWidget {
   final List<Transactions> transactions;
   final Function delTx;
 
-  static const List<Color> colorslist = [
-    Colors.red,
-    Colors.blueGrey,
-    Colors.yellow,
-    Colors.black
-  ];
-  Color bgColor = colorslist[Random().nextInt(4)];
-
   TransactionList(this.transactions, this.delTx);
 
   @override
@@ -54,7 +46,7 @@ class TransactionList extends StatelessWidget {
                   margin: EdgeInsets.all(10),
                   child: ListTile(
                       leading: CircleAvatar(
-                        backgroundColor: bgColor,
+                        backgroundColor: Theme.of(context).primaryColor,
                         radius: 30,
                         child: Padding(
                           padding: const EdgeInsets.all(8.0),
